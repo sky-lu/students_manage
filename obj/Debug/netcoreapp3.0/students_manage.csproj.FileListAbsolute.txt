@@ -1,0 +1,11 @@
+E:\Pratices\students_manage\bin\Debug\netcoreapp3.0\students_manage.exe
+E:\Pratices\students_manage\bin\Debug\netcoreapp3.0\students_manage.deps.json
+E:\Pratices\students_manage\bin\Debug\netcoreapp3.0\students_manage.runtimeconfig.json
+E:\Pratices\students_manage\bin\Debug\netcoreapp3.0\students_manage.runtimeconfig.dev.json
+E:\Pratices\students_manage\bin\Debug\netcoreapp3.0\students_manage.dll
+E:\Pratices\students_manage\bin\Debug\netcoreapp3.0\students_manage.pdb
+E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.csprojAssemblyReference.cache
+E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.AssemblyInfoInputs.cache
+E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.AssemblyInfo.cs
+E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.dll
+E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.pdb
