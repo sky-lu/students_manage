@@ -27,9 +27,9 @@ namespace Authority
 
         // }
 
-        // public Array getUser() {
-        //     reutrn new Array();
-        // }
+        public string getUser() {
+            return "zhangsan  18   man  ";
+        }
 
         
 
