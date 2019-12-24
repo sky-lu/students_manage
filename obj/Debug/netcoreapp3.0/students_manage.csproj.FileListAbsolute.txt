@@ -9,3 +9,14 @@ E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.AssemblyInfo
 E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.AssemblyInfo.cs
 E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.dll
 E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.pdb
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\students_manage.exe
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\students_manage.deps.json
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\students_manage.runtimeconfig.json
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\students_manage.runtimeconfig.dev.json
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\students_manage.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\students_manage.pdb
+D:\Programs\Project\Practice\StudentsManagement\obj\Debug\netcoreapp3.0\students_manage.csprojAssemblyReference.cache
+D:\Programs\Project\Practice\StudentsManagement\obj\Debug\netcoreapp3.0\students_manage.AssemblyInfoInputs.cache
+D:\Programs\Project\Practice\StudentsManagement\obj\Debug\netcoreapp3.0\students_manage.AssemblyInfo.cs
+D:\Programs\Project\Practice\StudentsManagement\obj\Debug\netcoreapp3.0\students_manage.dll
+D:\Programs\Project\Practice\StudentsManagement\obj\Debug\netcoreapp3.0\students_manage.pdb
