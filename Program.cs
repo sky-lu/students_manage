@@ -1,4 +1,5 @@
 ﻿using System;
+using Interface;
 
 namespace students_manage
 {
@@ -6,7 +7,9 @@ namespace students_manage
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            Interaction act = new Interaction();
+            act.init();
         }
     }
 }
