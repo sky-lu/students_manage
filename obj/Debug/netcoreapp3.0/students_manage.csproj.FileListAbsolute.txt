@@ -32,3 +32,15 @@ E:\Pratices\students_manage\bin\Debug\netcoreapp3.0\System.Security.Permissions.
 E:\Pratices\students_manage\bin\Debug\netcoreapp3.0\System.Xml.XPath.XmlDocument.dll
 E:\Pratices\students_manage\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\Pratices\students_manage\obj\Debug\netcoreapp3.0\students_manage.csproj.CopyComplete
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\BouncyCastle.Crypto.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\Google.Protobuf.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\MySql.Data.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\Renci.SshNet.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\SshNet.Security.Cryptography.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\System.Resources.Extensions.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\System.Security.Permissions.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\System.Xml.XPath.XmlDocument.dll
+D:\Programs\Project\Practice\StudentsManagement\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Programs\Project\Practice\StudentsManagement\obj\Debug\netcoreapp3.0\students_manage.csproj.CopyComplete

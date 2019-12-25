@@ -1,5 +1,6 @@
 ﻿using System;
 using Interface;
+using StudentsInfo;
 
 namespace students_manage
 {
@@ -10,6 +11,9 @@ namespace students_manage
             
             Interaction act = new Interaction();
             act.init();
+
+            Students b = new Students();
+            b.add();
         }
     }
 }
