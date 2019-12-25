@@ -1,4 +1,6 @@
 using System;
+using MySql.Data.MySqlClient;
+
 
 namespace Authority
 {
@@ -28,7 +30,24 @@ namespace Authority
         // }
 
         public string getUser() {
-            return "zhangsan  18   man  ";
+            string query = "SELECT * FROM `demo_1`";
+            MySqlConnection myConnection = new MySqlConnection("server=localhost;user id=root;password=Yiming001;database=my_db_test");
+            MySqlCommand myCommand = new MySqlCommand(query, myConnection);
+            myConnection.Open();
+            myCommand.ExecuteNonQuery();
+            MySqlDataReader myDataReader = myCommand.ExecuteReader();
+            
+            string ttt = "";
+            while (myDataReader.Read() == true)
+            {
+                ttt += myDataReader["id"];
+                ttt += myDataReader["age"];
+                ttt += myDataReader["height"];
+            }
+            myDataReader.Close();
+            myConnection.Close();
+
+            return $"zhangsan  18   man  {ttt}";
         }
 
         
