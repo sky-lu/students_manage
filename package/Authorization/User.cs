@@ -34,8 +34,6 @@ namespace Authority
             return false;
         }
         
-
-        
         public bool delUser() {
             
             return false;
@@ -110,9 +108,6 @@ namespace Authority
                 
                 return "";
             }
-            
-            
-
             
         }
 

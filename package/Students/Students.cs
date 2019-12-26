@@ -1,4 +1,8 @@
 using System;
+using System.Collections.Generic;
+using System.Collections;
+using Console = Colorful.Console;
+using System.Drawing;
 
 namespace StudentsInfo{
 
@@ -53,13 +57,48 @@ namespace StudentsInfo{
             Console.WriteLine("major:" + major);
         }
 
-        public bool search(){
-
-            Console.Write("Enter student's name:");
+        public void list(){
             
-            return true;
+            String text = System.IO.File.ReadAllText(@"E:\Pratices\students_manage\demo.txt");
+            string[] lines = text.Split("\n");
+
+            List<Dictionary<string, string>> stus = new List<Dictionary<string, string>>();
+            
+            foreach (var line in lines)
+            {
+
+                string[] field = line.Split("#");
+                var userDic = new Dictionary<string, string>();
+                userDic.Add("id", field[0]);
+                userDic.Add("name", field[1]);
+                userDic.Add("sex", field[2]);
+                userDic.Add("age", field[3]);
+                userDic.Add("major", field[4]);
+                stus.Add(userDic);
+            }
+
+            int i = 0;
+            foreach (var stu in stus)
+            {
+                string showLine = null;
+                foreach (KeyValuePair<string, string> f in (Dictionary<string, string>)stu)
+                {
+                    showLine += ("| "+f.Value.Trim().PadRight(20));
+                }
+                if (i > 0)
+                {
+                    Console.WriteLine(showLine);
+                }
+                else
+                {
+                    Console.WriteLine(showLine + "\n", Color.Tomato);
+                }
+                i++;
+            }
+
+
         }
-    }
+    } 
 
 
 

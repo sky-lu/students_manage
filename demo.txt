@@ -1,0 +1,6 @@
+Id  #  Name #   Sex #   Age  #  Major   
+1   #  Jack  # man  #  19  #   Computer Science
+2   #  Sara  #  female #22   #  Business Management
+3   #  Mike  #  man  #  20   #  Hotel Management
+4   # Jay   #  man  #  23   #  Computer Science
+5   #  Thao #   female #20  #   Hotel Management
