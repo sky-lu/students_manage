@@ -1,6 +1,18 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 using MySql.Data.MySqlClient;
+using Xunit.Abstractions;
+using YamlDotNet.Serialization;
+using YamlDotNet.RepresentationModel;
+using YamlDotNet.Helpers;
+using YamlDotNet.Core;
+using YamlDotNet.Serialization.NamingConventions;
+using students_manage.config;
+
+
 
 
 namespace Authority
@@ -8,6 +20,9 @@ namespace Authority
 
     class User
     {
+
+        //private readonly ITestOutputHelper output;
+
         
         public int addUser() {
             
@@ -30,8 +45,10 @@ namespace Authority
 
         // }
 
-        public string getUser() {
 
+        public string getUser() {
+            
+            
             // Hashtable ct = new Hashtable();
             // Hashtable cr1 = new Hashtable();
             // Hashtable cr2 = new Hashtable();

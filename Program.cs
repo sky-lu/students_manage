@@ -1,6 +1,7 @@
 ﻿using System;
 using Interface;
 using StudentsInfo;
+using Authority;
 
 namespace students_manage
 {
@@ -8,7 +9,8 @@ namespace students_manage
     {
         static void Main(string[] args)
         {
-            (new Interaction()).init().daemon();
+            (new User()).getUser();
+            //(new Interaction()).init().daemon();
             // Students b = new Students();
             // b.add();
         }
