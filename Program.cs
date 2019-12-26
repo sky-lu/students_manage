@@ -8,12 +8,9 @@ namespace students_manage
     {
         static void Main(string[] args)
         {
-            
-            Interaction act = new Interaction();
-            act.init();
-
-            Students b = new Students();
-            b.add();
+            (new Interaction()).init().daemon();
+            // Students b = new Students();
+            // b.add();
         }
     }
 }
