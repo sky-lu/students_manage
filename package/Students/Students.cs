@@ -53,13 +53,13 @@ namespace StudentsInfo{
             Console.WriteLine("major:" + major);
         }
 
-        public bool search(){
-
-            Console.Write("Enter student's name:");
+        public void list(){
             
-            return true;
+            String text = System.IO.File.ReadAllText(@"D:\Programs\Project\Practice\StudentsManagement\demo.txt");
+            Console.WriteLine("ffffff" + text);
+           
         }
-    }
+    } 
 
 
 

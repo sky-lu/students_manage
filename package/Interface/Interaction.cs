@@ -2,6 +2,7 @@ using System;
 using Authority;
 using System.Drawing;
 using Console = Colorful.Console;
+using StudentsInfo;
 
 namespace Interface{
 
@@ -77,6 +78,10 @@ namespace Interface{
                             break;
                         //....
                         //Here fill the other module function route
+                        case "list":
+                            (new Students()).list();
+                            Console.ReadLine();
+                            break;
                         default:
 
                             break;
