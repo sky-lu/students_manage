@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using Console = Colorful.Console;
 using System.Drawing;
+using System.IO;
 
 namespace StudentsInfo{
 
@@ -58,8 +59,11 @@ namespace StudentsInfo{
         }
 
         public void list(){
+
+            String fileName = "demo.txt";
+            String fullPath = Path.GetFullPath(fileName);
             
-            String text = System.IO.File.ReadAllText(@"E:\Pratices\students_manage\demo.txt");
+            String text = System.IO.File.ReadAllText(@fullPath);
             string[] lines = text.Split("\n");
 
             List<Dictionary<string, string>> stus = new List<Dictionary<string, string>>();

@@ -11,7 +11,7 @@ namespace Interface{
         private string title = "STU MANAGE SYS";
 
         private string[] order = {
-            "#home", "#logout", "#list", 
+            "#home", "#logout", "#list", "#add",
             "#next", "#previous", "#show/{id}", 
             "#edit/{id}", "#delete/{id}", "#quit"
         };
@@ -81,6 +81,7 @@ namespace Interface{
                         case "list":
                             (new Students()).list();
                             Console.ReadLine();
+                            
                             break;
                         default:
 
