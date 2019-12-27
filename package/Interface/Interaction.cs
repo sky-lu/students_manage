@@ -80,26 +80,6 @@ namespace Interface{
                  
                 switch(routeStr.Replace("#", "")) {
                         
-<<<<<<< HEAD
-                        case "logout":
-                            (new Auth()).logout();
-                            break;
-                        case "quit":
-                            (new Auth()).quit();
-                            break;
-                        //....
-                        //Here fill the other module function route
-                        case "list":
-                            (new Students()).list();
-                            Console.ReadLine();
-                            
-                            break;
-                        default:
-
-                            break;
-                    }
-
-=======
                     case "logout":
                         (new Auth()).logout();
                         break;
@@ -117,7 +97,6 @@ namespace Interface{
                     default:
 
                         break;
->>>>>>> eda83817a5975b77b5f0fcb8e54efc56f852aa0c
                 }
 
             }
