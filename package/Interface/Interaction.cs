@@ -13,7 +13,8 @@ namespace Interface{
         private string[] order = {
             "#home", "#logout", "#list", 
             "#next", "#previous", "#show/{id}", 
-            "#edit/{id}", "#delete/{id}", "#quit"
+            "#edit/{id}", "#delete/{id}", "#import", 
+            "#quit"
         };
 
         public Interaction() {
@@ -58,36 +59,46 @@ namespace Interface{
         }
 
         public void daemon() {
+
             while (true) {
+                string routeStr = null;
+                if (Auth.isAuth == true)
+                {
+                    routeStr = enter("Menu >>>:");
+                }
                 skeleton();
-                if (Auth.isAuth == false) {
-                    if (!Auth.isFirst) {
+                if (Auth.isAuth == false)
+                {
+                    if (!Auth.isFirst)
+                    {
                         Console.WriteLine("Your authorization is failed, please try again.", Color.Red);
                     }
                     (new Auth()).showAuth();
-                }else {
-                    string routeStr = enter("Menu >>>:");
-
-                    switch(routeStr.Replace("#", "")) {
-                        
-                        case "logout":
-                            (new Auth()).logout();
-                            break;
-                        case "quit":
-                            (new Auth()).quit();
-                            break;
-                        //....
-                        //Here fill the other module function route
-                        case "list":
-                            (new Students()).list();
-                            Console.ReadLine();
-                            break;
-                        default:
-
-                            break;
-                    }
-
+                    skeleton();
+                    continue;
                 }
+                 
+                switch(routeStr.Replace("#", "")) {
+                        
+                    case "logout":
+                        (new Auth()).logout();
+                        break;
+                    case "quit":
+                        (new Auth()).quit();
+                        break;
+                    case "import":
+
+                        break;
+                    //....
+                    //Here fill the other module function route
+                    case "list":
+                        (new Students()).list();
+                        break;
+                    default:
+
+                        break;
+                }
+
             }
             
         }
