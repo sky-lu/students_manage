@@ -53,7 +53,8 @@ namespace Interface{
 
         public static string enter(string tip = "") {
             if (string.IsNullOrEmpty(tip) == false) {
-                Interaction.echo(tip);
+                //Interaction.echo(tip);
+                Console.Write(tip, Color.Yellow);
             }
             return Console.ReadLine();
         }
@@ -64,7 +65,8 @@ namespace Interface{
                 string routeStr = null;
                 if (Auth.isAuth == true)
                 {
-                    routeStr = enter("Menu >>>:");
+                    routeStr = enter("Menu >>>: ");
+                    
                 }
                 skeleton();
                 if (Auth.isAuth == false)
@@ -77,7 +79,9 @@ namespace Interface{
                     skeleton();
                     continue;
                 }
-                 
+
+                Console.WriteLine("\n>>>" + routeStr, Color.Green);
+                Console.WriteLine("".PadRight(Console.LargestWindowWidth, '-'));
                 switch(routeStr.Replace("#", "")) {
                         
                     case "logout":
@@ -95,9 +99,11 @@ namespace Interface{
                         (new Students()).list();
                         break;
                     default:
-
+                        Console.WriteLine($"There have no \"{routeStr}\" order", Color.Orange);
                         break;
                 }
+                Console.WriteLine("".PadRight(Console.LargestWindowWidth, '-'));
+
 
             }
             
