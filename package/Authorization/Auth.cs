@@ -11,7 +11,7 @@ namespace Authority
 
         public static bool isFirst = true;
 
-        public void showAuth() {
+        public bool showAuth() {
 
             Interaction.echo("Please enter your login name and login password, devided by '|'");
             string input = null;
@@ -28,7 +28,7 @@ namespace Authority
                     break;
                 }
             }
-            this.authUser(input == null ? "" : input);
+            return this.authUser(input == null ? "" : input);
         }
         
         public bool authUser(string authInfo) {
