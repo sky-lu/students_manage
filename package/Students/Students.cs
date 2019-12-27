@@ -58,8 +58,8 @@ namespace StudentsInfo{
         }
 
         public void list(){
-            
-            String text = System.IO.File.ReadAllText(@"E:\Pratices\students_manage\demo.txt");
+
+            String text = System.IO.File.ReadAllText(@Environment.CurrentDirectory + "/../../../demo.txt");
             string[] lines = text.Split("\n");
 
             List<Dictionary<string, string>> stus = new List<Dictionary<string, string>>();
