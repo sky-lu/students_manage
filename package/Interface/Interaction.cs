@@ -3,32 +3,46 @@ using Authority;
 using System.Drawing;
 using Console = Colorful.Console;
 using StudentsInfo;
+using System.Globalization;
 
 namespace Interface{
 
     class Interaction {
 
+        public static string data = "aaaaaaaaaaaaa";
+
         private string title = "STU MANAGE SYS";
 
+        
         private string[] order = {
-            "#home", "#logout", "#list", "#add",
-            "#next", "#previous", "#show/{id}", 
-            "#edit/{id}", "#delete/{id}", "#import", 
-            "#quit"
-        };
+                "#home", "#logout", "#list", "#add",
+                "#next", "#previous", "#show/{id}", 
+                "#edit/{id}", "#delete/{id}", "#import", 
+                "#quit"
+            };
+            
+    
 
         public Interaction() {
-
-
+           
         }
         public Interaction init() {
             
-            
+            this.ToTitleCase();
             return this;
+        }
+        public void ToTitleCase (){
+
+            TextInfo myTI = new CultureInfo("en-US",false).TextInfo;
+            for (int i = 0 ;i < this.order.Length ; i++){
+                this.order[i] = myTI.ToTitleCase(this.order[i]);//this.ToTitleCase(this.order[i]);
+            }
+            
         }
 
         public void skeleton() {
-
+             
+        
             Console.Clear();
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
             int consoleWidth = Console.WindowWidth;
