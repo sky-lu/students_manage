@@ -9,7 +9,6 @@ namespace Interface{
 
     class Interaction {
 
-        public static string data = "aaaaaaaaaaaaa";
 
         private string title = "STU MANAGE SYS";
 
@@ -112,6 +111,16 @@ namespace Interface{
                     case "list":
                         (new Students()).list();
                         break;
+                    case "add":
+                        (new Students()).add();
+                        break;
+                    case "delete":
+                        (new Students()).delete();
+                        break;
+                    case "edit":
+                        (new Students()).edit();
+                        break;
+
                     default:
                         Console.WriteLine($"There have no \"{routeStr}\" order", Color.Orange);
                         break;
