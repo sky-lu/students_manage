@@ -84,10 +84,10 @@ namespace StudentsInfo{
             Console.WriteLine("major:" + major);
             
             var addUser = new Dictionary<string,string>();
-            addUser.Add("id", "6");
+            addUser.Add("id", Convert.ToString(stus.Count));
             addUser.Add("name", name);
             addUser.Add("sex", sexLable);
-            addUser.Add("age", "25");
+            addUser.Add("age", Convert.ToString(age));
             addUser.Add("major", major);
             stus.Add(addUser);
             
